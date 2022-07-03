@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Quiz Game with DOM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+
+            <h2 id="Corrects">Correct answers:</h2>
+            <h2 id="Wrongs">Wrong answers:</h2>
+            <h2 id="Questions">Total Questions Answered:</h2>
+            <h2 id="Accuracy">Accuracy:</h2>
+
+        </nav>
+
+        <main>
+
+            <aside>
+
+                <h1>Questions</h1>
+                <h2 id="QuestionText">Welcome to my quiz game. <br>
+                    You can choose between three types of questions with the buttons below. <br>
+                    Cheer up and have a lot of fun. <br>
+                    You win if you reach 10 points!</h2>
+                <div style="height: 5%; background-color: bisque;"></div>
+                <input id="buttonCulture" onclick="chooseCulture()" type="button" value="Culture" style="margin-left: 5%;">
+                <input id="buttonMath" onclick="chooseMaths()" type="button" value="Maths">
+                <input id="buttonMultiplication" onclick="chooseMultiplication()" type="button" value="Multiplications">
+                <div style="height: 5%; background-color: bisque;"></div>
+                <input onclick="restartQuiz()" type="button" value="Restart" style="margin-left: 15%;">
+                <input onclick="closeQuiz()" type="button" value="Close" style="margin-left: 30%;">
+
+            </aside>
+
+            <section>
+
+                <h1>Answers</h1>
+                <img id="Image" src="./pictures/Quiz.jpg">
+                <h2 id="AnswerExplain"></h2>
+                <div></div>
+                <div></div>
+                <input id="button1" onclick="checkAnswerButton1()" type="button" value="" style="margin-left: 5%;">
+                <input id="button2" onclick="checkAnswerButton2()" type="button" value="">
+                <input id="button3" onclick="checkAnswerButton3()" type="button" value="">
+                <div></div>
+                <input id="textField" onclick="cleanText()" type="text" value="Your answer here" style="margin: 2%; margin-left: 5%; width: 60%; height: 8%; visibility: hidden;">
+                <input id="textButton" onclick="checkAnswerText()" type="button" value="Send Answer" 
+                        style="margin: 2%; margin-left: 5%; width: 23%; height: 7%; visibility: hidden;">
+                <div></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            IES Pere Maria. BENIDORM.  Antonio Nicolás Salmerón Rubio {S3ll4rd0} tonet.sellardo@gmail.com
+        </footer>
+
+    </body>
+    <script src="script.js"></script>
+
+</html>
